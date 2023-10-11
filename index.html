@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Australian Wine</title>
+    <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+    <!-- Import pure.css -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- CSS file -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+
+    <style>
+        body {background-color: PAPAYAWHIP;}
+        h1   {color: blue;}
+        p    {color: rgb(105, 12, 12);}
+        </style>
+
+
+</head>
+
+<body>
+
+    <div class="page">
+
+        <h2>How is Australian Wine Comparing to the World?</h2>
+        <!-- pure grid group -->
+        <div class="pure-g">
+            <div class="pure-u-1-2">
+                <div id="vis1" class="vis-container"></div>
+            </div>
+            <div class="pure-u-1-2">
+                <p> If you are fan of wine, Australia is a perfect place for you!
+                    <p> Australia is the 8th country in the world in wine producing with 4957 different wines, and located in the 8th grade in a list of the best wines with an average country rate of 87.89 (from a scale of 80 to 100).
+                        <p> figure</p>
+            </div>
+            
+        </div>
+        <!-- end pure grid group -->
+        <br>
+
+     
+
+
+            <hr class="hr3">
+
+            <h2>Where Can You Find the Best Wine In Australia?</h2>
+            <!-- pure grid group -->
+            <div class="pure-g">
+                <div class="pure-u-1-2">
+                    <div id="vis2" class="vis-container"></div>
+                </div>
+                <div class="pure-u-1-4">
+                    <p> By a minor difference, Tasmania is the state that the most sommeliers like, with average rate of 88.03.</p>
+                    <p<> The second and third rating place are belonged to Victoria and South Australia, with the same country average rate of 87.89.
+                    <p> Although the New South Wales produce more wines than the other states, the average rating of the state is decrease the average rate of the country.
+                        
+                </div>
+                <div class="pure-u-1-4">
+                    <p> figure
+                </div>
+            </div>
+            <!-- end pure grid group -->
+            <br>
+                        <img src=”ANVERS2018CabernetSauvignon2.jpg” />
+            <hr class="hr3">
+
+
+            <h2>Which Wine is Should You Drink in Australia?</h2>
+            <!-- pure grid group -->
+            <div class="pure-g">
+                <div class="pure-u-1-2">
+                    <div id="vis3" class="vis-container"></div>
+                </div>
+                <div class="pure-u-1-2">
+                <p> If you plan to visit Victoria or South Australia soon, it is reccomended to drink the great shiraz wine.
+                    <p> But if you plan to discover the great beaches of the Western Australia, the probability to get good cabarnet sauvignon is higher than the other types.
+                        
+                        <p> figure
+                </div>
+            </div>
+            <!-- end pure grid group -->
+            <br>
+
+
+            <hr class="hr3">
+
+
+    </div>
+
+
+    <script type="text/javascript">
+        var specVis1 = "Countries_Bar_Charts.json";
+        vegaEmbed('#vis1', specVis1);
+
+        var specVis2 = "Map_Chart.json";
+        vegaEmbed('#vis2', specVis2);
+
+        var specVis3 = "Box_Chart.json";
+        vegaEmbed('#vis3', specVis3);
+
+        print(brush)
+    </script>
+</body>
+
+</html>
